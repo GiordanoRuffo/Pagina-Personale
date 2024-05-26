@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Sito - File Batch</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #666;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav span {
+            color: #fff;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            background-color: #444;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        h2 {
+            color: #444;
+        }
+        p {
+            color: #666;
+        }
+        pre {
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-family: Consolas, Monaco, 'Courier New', Courier, monospace;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Mini Sito - File Batch</h1>
+    </header>
+    <nav>
+        <span>Cos'è un File Batch</span>
+        <span>Come si Crea</span>
+        <span>Esempi Pratici</span>
+    </nav>
+    <div class="container">
+        <section id="cos-e-un-file-batch">
+            <h2>Cos'è un File Batch?</h2>
+            <p>Un file batch è un tipo di file utilizzato nei sistemi operativi Windows per eseguire una serie di comandi in sequenza. Spesso chiamati file batch MS-DOS o file batch di Windows, questi file contengono una serie di istruzioni che vengono eseguite automaticamente quando il file viene avviato. Sono utilizzati per automatizzare compiti ripetitivi o complessi.</p>
+        </section>
+        <section id="come-si-crea">
+            <h2>Come si Crea con Semplici Comandi MS-DOS</h2>
+            <p>Creare un file batch è semplice utilizzando il Blocco Note di Windows. Ecco un esempio di come creare un file batch che saluta l'utente:</p>
+            <pre>
+                <code>
+                    @echo off
+                    echo Benvenuto!
+                    pause
+                </code>
+            </pre>
+            <p>Questo è un codice che se lo si salva con ".bat" (ad esempio, "saluto.bat") e si prova ad avviarlo, si potrà vedere che verrà visualizzato un messaggio di benvenuto e il programma si interromperà fino a quando non verrà premuto un tasto.</p>
+        </section>
+        <section id="esempi-pratici">
+            <h2>Esempi Pratici</h2>
+            <p>Ecco alcuni esempi pratici di cosa puoi fare con i file batch:</p>
+            <ol>
+                <li>Avviare più programmi contemporaneamente.</li>
+                <li>Effettuare il backup di file e cartelle.</li>
+                <li>Automatizzare la pulizia dei file temporanei.</li>
+                <li>Gestire la configurazione di rete.</li>
+                <li>Eseguire compiti di manutenzione del sistema.</li>
+            </ol>
+        </section>
+    </div>
+</body>
+</html>
