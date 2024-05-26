@@ -14,6 +14,11 @@
             --nav-bg-color: #666;
             --nav-text-color: #fff;
             --nav-hover-color: #444;
+            --palette-color1: #ffecd2;
+            --palette-color2: #fcb69f;
+            --palette-color3: #f8b500;
+            --palette-color4: #e3f2fd;
+            --palette-color5: #bbdefb;
         }
 
         body {
@@ -66,6 +71,26 @@
             font-family: Consolas, Monaco, 'Courier New', Courier, monospace;
             color: var(--primary-color);
         }
+
+        /* Palette di colori */
+        .palette {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .palette .color-box {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .color-box.color1 { background-color: var(--palette-color1); }
+        .color-box.color2 { background-color: var(--palette-color2); }
+        .color-box.color3 { background-color: var(--palette-color3); }
+        .color-box.color4 { background-color: var(--palette-color4); }
+        .color-box.color5 { background-color: var(--palette-color5); }
     </style>
 </head>
 <body>
@@ -105,6 +130,15 @@
                 <li>Eseguire compiti di manutenzione del sistema.</li>
             </ol>
         </section>
+
+        <!-- Aggiungi la palette di colori -->
+        <div class="palette">
+            <div class="color-box color1"></div>
+            <div class="color-box color2"></div>
+            <div class="color-box color3"></div>
+            <div class="color-box color4"></div>
+            <div class="color-box color5"></div>
+        </div>
     </div>
 </body>
 </html>
