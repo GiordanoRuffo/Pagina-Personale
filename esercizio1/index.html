@@ -5,31 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mini Sito - File Batch</title>
     <style>
+        /* Definizione delle variabili di colore */
+        :root {
+            --primary-color: #333;
+            --secondary-color: #444;
+            --text-color: #666;
+            --background-color: #f4f4f4;
+            --nav-bg-color: #666;
+            --nav-text-color: #fff;
+            --nav-hover-color: #444;
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: var(--background-color);
+            color: var(--text-color);
         }
         header {
-            background-color: #333;
+            background-color: var(--primary-color);
             color: #fff;
             padding: 20px;
             text-align: center;
         }
         nav {
-            background-color: #666;
+            background-color: var(--nav-bg-color);
             padding: 10px 20px;
             text-align: center;
         }
         nav span {
-            color: #fff;
+            color: var(--nav-text-color);
             padding: 10px 20px;
             margin: 0 10px;
             border-radius: 5px;
-            background-color: #444;
+            background-color: var(--nav-hover-color);
         }
         .container {
             max-width: 800px;
@@ -37,13 +48,13 @@
             padding: 0 20px;
         }
         h1 {
-            color: #333;
+            color: var(--primary-color);
         }
         h2 {
-            color: #444;
+            color: var(--secondary-color);
         }
         p {
-            color: #666;
+            color: var(--text-color);
         }
         pre {
             background-color: #eee;
@@ -53,7 +64,7 @@
         }
         code {
             font-family: Consolas, Monaco, 'Courier New', Courier, monospace;
-            color: #333;
+            color: var(--primary-color);
         }
     </style>
 </head>
