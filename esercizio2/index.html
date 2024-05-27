@@ -7,18 +7,17 @@
     <style>
         /* Definizione delle variabili di colore */
         :root {
-            --primary-color: #333;
-            --secondary-color: #444;
-            --text-color: #666;
-            --background-color: #f4f4f4;
-            --nav-bg-color: #666;
-            --nav-text-color: #fff;
-            --nav-hover-color: #444;
-            --palette-color1: #ffecd2;
-            --palette-color2: #fcb69f;
-            --palette-color3: #f8b500;
-            --palette-color4: #e3f2fd;
-            --palette-color5: #bbdefb;
+            --primary-color: #1a202c;
+            --secondary-color: #4a5568;
+            --text-color: #718096;
+            --background-color: #f7fafc;
+            --box-bg-color: #ffffff;
+            --box-shadow-color: rgba(0, 0, 0, 0.1);
+            --palette-color1: #90caf9;
+            --palette-color2: #64b5f6;
+            --palette-color3: #42a5f5;
+            --palette-color4: #2196f3;
+            --palette-color5: #1e88e5;
         }
 
         body {
@@ -42,6 +41,15 @@
             color: var(--text-color);
         }
 
+        /* Riquadri per i paragrafi */
+        .paragraph-box {
+            background-color: var(--box-bg-color);
+            box-shadow: 0 0 10px var(--box-shadow-color);
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
         /* Palette di colori */
         .palette {
             display: flex;
@@ -53,7 +61,7 @@
             width: 50px;
             height: 50px;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px var(--box-shadow-color);
         }
 
         .color-box.color1 { background-color: var(--palette-color1); }
@@ -66,54 +74,86 @@
 <body>
     <div class="container">
         <h2>Comandi della Shell di Windows</h2>
-        <p>In questa guida, troverai una lista di comandi utili per gestire i file e le directory nella Shell di Windows.</p>
+        <div class="paragraph-box">
+            <p>In questa guida, troverai una lista di comandi utili per gestire i file e le directory nella Shell di Windows.</p>
+        </div>
 
         <h3>backup</h3>
-        <p>Il comando <strong>backup</strong> ti permette di eseguire il backup di un file o di una directory. È utile per creare copie di sicurezza dei tuoi dati più importanti.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>backup</strong> ti permette di eseguire il backup di un file o di una directory. È utile per creare copie di sicurezza dei tuoi dati più importanti.</p>
+        </div>
 
         <h3>copy</h3>
-        <p>Il comando <strong>copy</strong> consente di copiare uno o più file da una posizione all'altra. È utile quando devi spostare o duplicare file in diverse cartelle.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>copy</strong> consente di copiare uno o più file da una posizione all'altra. È utile quando devi spostare o duplicare file in diverse cartelle.</p>
+        </div>
 
         <h3>date</h3>
-        <p>Il comando <strong>date</strong> ti mostra la data corrente, utile per tenere traccia del tempo o per inserire la data in un file o documento.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>date</strong> ti mostra la data corrente, utile per tenere traccia del tempo o per inserire la data in un file o documento.</p>
+        </div>
 
         <h3>del</h3>
-        <p>Il comando <strong>del</strong> elimina uno o più file. Assicurati di essere sicuro di eliminare i file selezionati, poiché l'operazione non può essere annullata.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>del</strong> elimina uno o più file. Assicurati di essere sicuro di eliminare i file selezionati, poiché l'operazione non può essere annullata.</p>
+        </div>
 
         <h3>deltree</h3>
-        <p>Il comando <strong>deltree</strong> elimina una directory e tutti i file al suo interno. Fate attenzione quando usate questo comando, poiché elimina in modo permanente i file e le cartelle.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>deltree</strong> elimina una directory e tutti i file al suo interno. Fate attenzione quando usate questo comando, poiché elimina in modo permanente i file e le cartelle.</p>
+        </div>
 
         <h3>exit</h3>
-        <p>Il comando <strong>exit</strong> chiude la finestra della Shell di Windows. È un modo rapido per terminare l'esecuzione di comandi e uscire dalla Shell.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>exit</strong> chiude la finestra della Shell di Windows. È un modo rapido per terminare l'esecuzione di comandi e uscire dalla Shell.</p>
+        </div>
 
         <h3>move</h3>
-        <p>Il comando <strong>move</strong> permette di spostare un file da una posizione all'altra. È utile quando devi spostare un file in una cartella diversa.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>move</strong> permette di spostare un file da una posizione all'altra. È utile quando devi spostare un file in una cartella diversa.</p>
+        </div>
 
         <h3>ren</h3>
-        <p>Il comando <strong>ren</strong> ti permette di rinominare un file o una directory. È utile quando devi cambiare il nome di un file o di una cartella.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>ren</strong> ti permette di rinominare un file o una directory. È utile quando devi cambiare il nome di un file o di una cartella.</p>
+        </div>
 
         <h3>time</h3>
-        <p>Il comando <strong>time</strong> ti mostra l'ora corrente. È utile per tenere traccia del tempo durante l'utilizzo della Shell.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>time</strong> ti mostra l'ora corrente. È utile per tenere traccia del tempo durante l'utilizzo della Shell.</p>
+        </div>
 
         <h3>ver</h3>
-        <p>Il comando <strong>ver</strong> mostra la versione del sistema operativo Windows in uso. È utile per verificare la versione del sistema e per eventuali problemi di compatibilità.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>ver</strong> mostra la versione del sistema operativo Windows in uso. È utile per verificare la versione del sistema e per eventuali problemi di compatibilità.</p>
+        </div>
 
         <h2>Comandi aggiuntivi</h2>
 
         <h3>cd</h3>
-        <p>Il comando <strong>cd</strong> permette di cambiare la directory corrente. È utile quando devi spostarti tra le cartelle nella Shell.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>cd</strong> permette di cambiare la directory corrente. È utile quando devi spostarti tra le cartelle nella Shell.</p>
+        </div>
 
         <h3>cls</h3>
-        <p>Il comando <strong>cls</strong> pulisce la finestra della Shell, eliminando tutti i comandi precedenti. È utile per mantenere la Shell ordinata e pulita.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>cls</strong> pulisce la finestra della Shell, eliminando tutti i comandi precedenti. È utile per mantenere la Shell ordinata e pulita.</p>
+        </div>
 
         <h3>dir</h3>
-        <p>Il comando <strong>dir</strong> mostra il contenuto di una directory. È utile per visualizzare i file e le cartelle presenti nella directory corrente.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>dir</strong> mostra il contenuto di una directory. È utile per visualizzare i file e le cartelle presenti nella directory corrente.</p>
+        </div>
 
         <h3>mkdir</h3>
-        <p>Il comando <strong>mkdir</strong> ti permette di creare una nuova directory. È utile quando devi creare una cartella per organizzare i tuoi file.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>mkdir</strong> ti permette di creare una nuova directory. È utile quando devi creare una cartella per organizzare i tuoi file.</p>
+        </div>
 
         <h3>type</h3>
-        <p>Il comando <strong>type</strong> mostra il contenuto di un file. È utile per visualizzare il testo o il codice presenti all'interno di un file.</p>
+        <div class="paragraph-box">
+            <p>Il comando <strong>type</strong> mostra il contenuto di un file. È utile per visualizzare il testo o il codice presenti all'interno di un file.</p>
+        </div>
     </div>
 
     <!-- Aggiungi la palette di colori -->
@@ -123,3 +163,6 @@
         <div class="color-box color3"></div>
         <div class="color-box color4"></div>
         <div class="color-box color5"></div>
+    </div>
+</body>
+</html>
