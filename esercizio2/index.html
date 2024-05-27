@@ -18,6 +18,9 @@
             --palette-color3: #42a5f5;
             --palette-color4: #2196f3;
             --palette-color5: #1e88e5;
+            --button-bg-color: #2196f3;
+            --button-text-color: #fff;
+            --button-hover-color: #1e88e5;
         }
 
         body {
@@ -48,6 +51,22 @@
             padding: 20px;
             border-radius: 5px;
             margin-bottom: 20px;
+        }
+
+        /* Pulsante */
+        .back-button {
+            display: block;
+            width: fit-content;
+            background-color: var(--button-bg-color);
+            color: var(--button-text-color);
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+        .back-button:hover {
+            background-color: var(--button-hover-color);
         }
 
         /* Palette di colori */
@@ -154,6 +173,8 @@
         <div class="paragraph-box">
             <p>Il comando <strong>type</strong> mostra il contenuto di un file. È utile per visualizzare il testo o il codice presenti all'interno di un file.</p>
         </div>
+
+        <a href="index.html" class="back-button">Torna all'indice</a>
     </div>
 
     <!-- Aggiungi la palette di colori -->
