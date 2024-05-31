@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esplora il mondo delle CPU & GPU</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/scrollreveal/dist/scrollreveal.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <header class="bg-gray-800 py-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold">Tutto quello che devi sapere</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-blue-500 transition-colors duration-300">Home</a></li>
+                    <li><a href="cpu.html" class="hover:text-blue-500 transition-colors duration-300">CPU</a></li>
+                    <li><a href="gpu.html" class="hover:text-blue-500 transition-colors duration-300">GPU</a></li>
+                    <li><a href="benchmark.html" class="hover:text-blue-500 transition-colors duration-300">Benchmark</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-gradient-to-r from-blue-500 to-indigo-500 py-16 px-4 sm:px-8 lg:px-16 overflow-hidden">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 space-y-6 z-10">
+                    <h1 class="text-4xl md:text-5xl font-bold">Esplora il mondo delle CPU & GPU</h1>
+                    <p class="text-lg">Scopri le ultime tecnologie e le migliori soluzioni per le tue esigenze di elaborazione.</p>
+                    <div class="flex space-x-4">
+                        <a href="cpu.html" class="bg-white text-blue-500 px-6 py-3 rounded-md hover:bg-blue-500 hover:text-white transition-colors duration-300">Esplora le CPU</a>
+                        <a href="gpu.html" class="bg-white text-blue-500 px-6 py-3 rounded-md hover:bg-blue-500 hover:text-white transition-colors duration-300">Esplora le GPU</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="https://davetechtips.wordpress.com/wp-content/uploads/2014/12/cpu1.jpg" alt="CPU" class="rounded-md shadow-lg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://www.hellotech.com/blog/wp-content/uploads/2020/02/what-is-a-gpu-770x462.jpg" alt="GPU" class="rounded-md shadow-lg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="https://www.retemediterranea.it/wp-content/uploads/2021/04/benchmark-analysis-1024x727.jpg" alt="Benchmark" class="rounded-md shadow-lg">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-800 py-16 px-4 sm:px-8 lg:px-16 scroll-mt-24" id="features">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 space-y-6 z-10">
+                    <h2 class="text-3xl md:text-4xl font-bold">Perché scegliere Noi?</h2>
+                    <p class="text-lg">Offriamo informazioni dettagliate e aggiornate sulle ultime tecnologie CPU e GPU. Aiutiamo i nostri utenti a prendere decisioni informate per le loro esigenze di elaborazione.</p>
+                    <div class="flex space-x-4">
+                        <a href="cpu.html" class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors duration-300">Scopri le CPU</a>
+                        <a href="gpu.html" class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors duration-300">Scopri le GPU</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0">
+                    <img src="https://t4.ftcdn.net/jpg/03/03/55/51/360_F_303555158_0h7YQZePL54n1UFE0Y5u4xqLSvHklqwc.jpg" alt="Features" class="rounded-md shadow-lg">
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-gray-900 py-16 px-4 sm:px-8 lg:px-16 scroll-mt-24" id="about">
+            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 order-2 md:order-1 space-y-6 z-10">
+                    <h2 class="text-3xl md:text-4xl font-bold">Chi siamo</h2>
+                    <p class="text-lg">Siamo un team di esperti appassionati di tecnologia che si dedica a fornire informazioni accurate e aggiornate sulle ultime CPU e GPU. Il nostro obiettivo è aiutare gli utenti a prendere decisioni informate per soddisfare le loro esigenze di elaborazione.</p>
+                    <a href="about.html" class="bg-blue-500 text-white px-6 py-3 rounded-md hover:bg-blue-600 transition-colors duration-300">Scopri di più</a>
+                </div>
+                <div class="md:w-1/2 mt-8 md:mt-0 order-1 md:order-2">
+                    <img src="https://media.licdn.com/dms/image/C4D0BAQHsZEZ-aeasAQ/company-logo_200_200/0/1631274798396/about___baltic_underwear_logo?e=2147483647&v=beta&t=5_wOIjrTp8gV6Yf3p8PkaddWvKm-rKW06RM5Of9pExc" alt="About" class="rounded-md shadow-lg">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 py-6 shadow-md">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2024 Giordano Ruffo. Tutti i diritti riservati.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+        });
+
+        ScrollReveal().reveal('.scroll-reveal', {
+            delay: 300,
+            duration: 800,
+            distance: '50px',
+            easing: 'cubic-bezier(0.5, 0, 0, 1)',
+            origin: 'bottom',
+            reset: true
+        });
+
+        gsap.from('.hero-title', {
+            scrollTrigger: {
+                trigger: '.hero-title',
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true
+            },
+            y: 100,
+            opacity: 0,
+            duration: 1.5,
+            ease: 'power2.out'
+        });
+
+        gsap.from('.hero-text', {
+            scrollTrigger: {
+                trigger: '.hero-text',
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            ease: 'power2.out'
+        });
+
+        gsap.from('.hero-cta', {
+            scrollTrigger: {
+                trigger: '.hero-cta',
+                start: 'top 80%',
+                end: 'top 20%',
+                scrub: true
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1,
+            ease: 'power2.out'
+        });
+    </script>
+</body>
+</html>
