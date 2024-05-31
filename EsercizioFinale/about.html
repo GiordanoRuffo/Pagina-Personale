@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Rendilo più moderno</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/scrollreveal/dist/scrollreveal.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <header class="bg-gray-800 py-6 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-3xl font-bold">Tutto quello che devi sapere</a>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="index.html" class="hover:text-blue-500 transition-colors duration-300">Home</a></li>
+                    <li><a href="cpu.html" class="hover:text-blue-500 transition-colors duration-300">CPU</a></li>
+                    <li><a href="gpu.html" class="hover:text-blue-500 transition-colors duration-300">GPU</a></li>
+                    <li><a href="benchmark.html" class="hover:text-blue-500 transition-colors duration-300">Benchmark</a></li>
+                    <li><a href="about.html" class="hover:text-blue-500 transition-colors duration-300">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-16 px-4 sm:px-8 lg:px-16">
+        <section class="text-center">
+            <h1 class="text-5xl font-bold mb-4">Chi siamo</h1>
+            <p class="text-lg mb-8">Rendilo più moderno è uno dei più importanti portali italiani dedicati al mondo dell'informatica e della tecnologia. Offriamo informazioni, guide e recensioni su CPU, GPU, schede madri, SSD, e tutto ciò che riguarda il vasto mondo del gaming e del computing.</p>
+        </section>
+
+        <section class="mt-16 grid grid-cols-1 gap-8 md:grid-cols-2">
+            <div class="bg-gray-700 rounded-md p-6 shadow-lg scroll-reveal">
+                <h2 class="text-3xl font-bold mb-4">La nostra missione</h2>
+                <p class="text-lg mb-8">La nostra missione è quella di aiutare gli utenti a prendere decisioni informate quando si tratta di acquistare nuovi componenti hardware o di aggiornare il proprio PC gaming o workstation. Offriamo recensioni imparziali e guide dettagliate, oltre a mantenere i nostri lettori aggiornati sulle ultime notizie e tendenze nel settore.</p>
+            </div>
+            <div class="bg-gray-700 rounded-md p-6 shadow-lg scroll-reveal">
+                <h2 class="text-3xl font-bold mb-4">Il nostro team</h2>
+                <p class="text-lg mb-8">Il nostro team è composto da esperti del settore, appassionati di tecnologia e giocatori di lunga data. Abbiamo le conoscenze e l'esperienza necessarie per fornire informazioni accurate e affidabili su qualsiasi argomento legato all'informatica e al gaming.</p>
+                <p class="text-lg mb-8">Siamo costantemente alla ricerca di nuovi talenti da aggiungere al nostro team. Se sei un appassionato di tecnologia e hai esperienza nel campo dell'informatica, del gaming o del giornalismo, non esitare a contattarci.</p>
+            </div>
+        </section>
+
+        <section class="mt-16 text-center">
+            <h2 class="text-4xl font-bold mb-4">Contattaci</h2>
+            <p class="text-lg mb-8">Se hai domande, commenti o suggerimenti, non esitare a contattarci. Siamo sempre felici di ricevere feedback dai nostri lettori.</p>
+            <a href="mailto:giordano.ruffo.s@iisenzoferrari.it" class="bg-white text-blue-500 px-6 py-3 rounded-md hover:bg-blue-500 hover:text-white transition-colors duration-300">Contattaci</a>
+</section>
+</main>
+<footer class="bg-gray-800 py-6 shadow-md">
+<div class="container mx-auto text-center">
+<p>© 2024 Giordano Ruffo. Tutti i diritti riservati.</p>
+</div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script>
+var swiper = new Swiper(".mySwiper", {
+pagination: {
+el: ".swiper-pagination",
+clickable: true,
+},
+autoplay: {
+delay: 5000,
+disableOnInteraction: false,
+},
+});
+ScrollReveal().reveal('.scroll-reveal', {
+delay: 300,
+duration: 800,
+distance: '50px',
+easing: 'cubic-bezier(0.5, 0, 0, 1)',
+origin: 'bottom',
+reset: true
+});
+gsap.from('.hero-title', {
+scrollTrigger: {
+trigger: '.hero-title',
+start: 'top 80%',
+end: 'top 20%',
+scrub: true
+},
+y: 100,
+opacity: 0,
+duration: 1.5,
+ease: 'power2.out'
+});
+gsap.from('.hero-text', {
+scrollTrigger: {
+trigger: '.hero-text',
+start: 'top 80%',
+end: 'top 20%',
+scrub: true
+},
+y: 50,
+opacity: 0,
+duration: 1.2,
+ease: 'power2.out'
+});
+gsap.from('.hero-cta', {
+scrollTrigger: {
+trigger: '.hero-cta',
+start: 'top 80%',
+end: 'top 20%',
+scrub: true
+},
+y: 50,
+opacity: 0,
+duration: 1,
+ease: 'power2.out'
+});
+</script>
+</body>
+</html>
