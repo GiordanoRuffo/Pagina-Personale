@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Benchmark</title>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #4F74D9, #283E68);
+            color: white;
+            font-family: sans-serif;
+        }
+    </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.16/tailwind.min.css">
     <link rel="stylesheet" href="https://unpkg.com/scrollreveal/dist/scrollreveal.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
 </head>
-<body class="bg-gray-900 text-white font-sans">
+<body>
     <header class="bg-gray-800 py-6 shadow-md">
         <div class="container mx-auto flex justify-between items-center">
             <a href="index.html" class="text-3xl font-bold">Tutto quello che devi sapere</a>
@@ -27,15 +34,7 @@
     </header>
 
     <main>
-        <section class="bg-gradient-to-r from-blue-500 to-indigo-500 py-16 px-4 sm:px-8 lg:px-16 overflow-hidden">
-            <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 space-y-6 z-10">
-                    <h1 class="text-4xl md:text-5xl font-bold">Scopri i migliori benchmark</h1>
-                    <p class="text-lg">Usa questi benchmark per fare delle possibili accoppiamenti tra Cpu e Gpu di alto livello.</p>
-                    <div class="flex space-x-4">
-                        <a href="#cpu-list" class="bg-white text-blue-500 px-6 py-3 rounded-md hover:bg-blue-500 hover:text-white transition-colors duration-300">Vai alla lista delle CPU</a>
-                    </div>
-                </div>
+        <section class="bg-gray-800 py-16 px-4 sm:px-8 lg:px-16">
             <div class="container mx-auto">
                 <h2 class="text-3xl md:text-4xl font-bold mb-8">Risultati Benchmark CPU</h2>
                 <!-- CPU -->
@@ -89,7 +88,7 @@
                         <p class="text-lg mb-4">Punteggio PassMark: 28,782</p>
                     </div>
                     <div class="bg-gray-700 rounded-md p-6 shadow-lg scroll-reveal">
-                        <h3 class="text-2xl font-bold mb-2">AMD Radeon RX 7800 XT</h3>
+                        <h3 class="text-2xl font-bold mb-2">AMD Radeon RX 7800 XT</H3>
                         <p class="text-lg mb-4">Punteggio PassMark: 24,011</p>
                     </div>
                 </div>
